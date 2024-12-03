@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Bird : MonoBehaviour
+public abstract class Bird : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    private float dailyFoodConsumption;
+    private float weight;
+
+     string animalName = "This is a Bird";
+
+    private float _weight 
     {
+        
+        get {  return weight; } set { weight = value;  }
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void birdMakeSound() 
     {
-        
+       
     }
+    private float _dailyFoodConsumption() 
+    {
+        return dailyFoodConsumption;
+    }
+
 }

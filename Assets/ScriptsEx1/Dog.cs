@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dog : MonoBehaviour
+public abstract class Dog :  Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    private float dailyFoodConsumption;
+    private int activityLevel;
+
+    public string name = "";
+    public void SetActivityLevel(int _activityLevel) 
     {
-        
+        activityLevel = _activityLevel;
+        if (activityLevel < 0 ) 
+        {
+            activityLevel = 0;
+            
+        }
+       
     }
 
-    // Update is called once per frame
-    void Update()
+    private void dogMakeSound() 
     {
-        
+       
     }
+
 }
