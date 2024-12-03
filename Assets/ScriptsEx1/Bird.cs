@@ -21,6 +21,8 @@ public abstract class Bird : Animal
     {
        
     }
+
+
     private float _dailyFoodConsumption() 
     {
         return dailyFoodConsumption;
